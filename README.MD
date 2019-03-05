@@ -1,30 +1,30 @@
-# Notes Langage C# - .Net/.Net core 
+# Notes Langage C#
 - Auteur: DANSOKO Boubakar
 - Date: 4/03/2019
 - Source: MSDN 
 - Lien utile : https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/
 ### Création d'un projet
 
-Pour un projet en ligne de commandes:
+- Pour un projet en ligne de commandes:
 ```
 dotnet new console
 ```
 
-Pour un projet en MVC:
+- Pour un projet en MVC:
 ```
 dotnet new mvc
 ```
 
-Pour une app web:
+- Pour une app web:
 ```
 dotnet new app
 ```
 
-pour restaurer l'app
+- Pour restaurer les packages
 ```
 dotnet restore
 ```
-pour lancer l'application:
+- Pour lancer l'application:
 ```
 dotnet run
 ```
@@ -110,8 +110,142 @@ Console.WriteLine($"a={a} , b={b} - Après incrément/décrementation"); //a=11 
 ```
 Exemple concaténation:
 ```csharp
+string name = "Jean";
+int age = 37;
+string rep = name+" "+age+" ans";
+
+Console.WriteLine(rep); // Jean 37 ans
+```
+### Conversion
+### Boucles
+#### For
+- Théorie:
+```
+for(initialisation des valeurs/Compteurs ; condition de boucle; que faire à chaque boucle)
+{
+    Instruction;
+    Instruction;
+    ...
+}
+```
+- Exemple:
+```csharp
+Console.WriteLine("Apprendre à compter jusqu'à 10.");
+
+for(int i=1; i <= 10; i++)
+{
+    Console.WriteLine(i); //1 2 3 4 5 6 7 8 9 10
+}
+```
+#### Do While
+- Théorie:
+```
+Faire
+{
+    Instruction;
+    Instruction;
+    Instruction;
+
+}
+TantQue(ma condition est vrai/fausse/vérifié);
+```
+- Exemple:
+```csharp
+string mdp = "Youpi92";
+string inp;
+
+do
+{
+    Console.WriteLine("Entrez votre mot de passe:");
+    inp = Console.ReadLine();
+}
+while(mdp != inp);
+Console.WriteLine("Mot de passe correct.");
+
+```
+Noter que l'on entre dans la boucle au moins une fois!
+
+#### While
+- Théorie:
+```
+tantque(condition)
+{
+    Instruction;
+    Instruction;
+    ...
+    ...
+}
+
+```
+- Exemple:
+```csharp
+int compteur = 0;
+
+while(compteur != 5)
+{
+    Console.WriteLine("La répétition est la clé de la maîtrise!");
+    compteur++;
+}
+```
+### Listes/Tableau
+
+#### Tableau
+- Théorie:
+```cs
+type[] nom = new type[taille];
+type[] nom = new type[] {valeur1,valeur2, valeur3, .. ,..};
+type[] nom = {valeur1, valeur2, .., ..};
+
+type[,] nom = new int[nombre de 'colonne',nombre 'd item' par colonne] 
+
+```
+- Exemple:
+```csharp
+string[] prenom = new string[3];
+int[] age = new int[3];
+
+prenom[0] = "Jean";
+prenom[1] = "Franck";
+prenom[2] = "Bernard";
+
+age[0] = 15;
+age[1] = 42;
+age[2] = 85;
+
+// équivaut à
+string[] prenom = new string[]{"Jean","Franck","Bernard"}
+int[] age = new int[]{12,42,85};
 
 
 ```
+#### Listes
+- Théorie:
+```
+
+```
+- Exemple:
+```csharp
+
+```
+### Entrées / Sorties
+#### Affichage dans la console
+```csharp
+string hello = "Hi Hello World!";
+Console.WriteLine(hello);
+```
+### Conversion
+- Théorie:
+```
+
+
+```
+- Exemple:
+```csharp
+string n = "42";
+
+```
+### Fonctions
+
+## POO
 
 
