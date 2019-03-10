@@ -196,7 +196,7 @@ type[] nom = new type[taille];
 type[] nom = new type[] {valeur1,valeur2, valeur3, .. ,..};
 type[] nom = {valeur1, valeur2, .., ..};
 
-type[,] nom = new int[nombre de 'colonne',nombre 'd item' par colonne] 
+type[,] nom = new int[nombre de colonne,nombre d item par colonne] 
 
 ```
 - Exemple:
@@ -222,12 +222,34 @@ int[] age = new int[]{12,42,85};
 - Théorie:
 ```sh
 List<type> nom = new List<type>(); //Déclaration /Instanciation
+nom.Add(valeur1); //Ajout à la liste
+nom.Add(valeur2); //Ajout à la liste
 
-nom.Add(valeur); //Ajout à la liste
+// ou
+
+List<type> = new List<type>(){valeur1, valeur2, valeur3, ... , ...}
 
 ```
 - Exemple:
 ```csharp
+List<string> noms = new List<string>();
+noms.Add("Lilou");
+noms.Add("Luc");
+noms.Add("Louïse");
+noms.Add("Liana");
+
+for(int i=0; i < noms.Count;i++)
+{
+    Console.WriteLine(noms[i]);
+} // Lilou Luc Louïse Liana 
+
+// Equivaut à
+List<string> noms = new List<string>(){"Lilou", "Luc", "Louïse", "Liana"};
+
+for(int i=0; i < noms.Count; i++)
+{
+    Console.WriteLine(noms[i]);
+} // Lilou Luc Louïse Liana
 
 ```
 ### Entrées / Sorties
@@ -248,6 +270,13 @@ string n = "42";
 
 ```
 ### Fonctions
+
+```sh
+accessibilité type_de_retour nomDeLaFonction(typedeparamètre1 nomduParamètre1, typedeparamètre2)
+{
+
+} 
+```
 
 ## POO
 
