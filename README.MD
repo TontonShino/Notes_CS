@@ -218,6 +218,7 @@ age[2] = 85;
 string[] prenom = new string[]{"Jean","Franck","Bernard"}
 int[] age = new int[]{12,42,85};
 
+//A rajouter deux dimensions
 
 ```
 #### Listes
