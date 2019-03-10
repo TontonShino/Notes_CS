@@ -201,9 +201,11 @@ type[,] nom = new int[nombre de colonne,nombre d item par colonne]
 ```
 - Exemple:
 ```csharp
+//Déclaration + Instanciation
 string[] prenom = new string[3];
 int[] age = new int[3];
 
+//Affectation des valeurs
 prenom[0] = "Jean";
 prenom[1] = "Franck";
 prenom[2] = "Bernard";
@@ -221,9 +223,9 @@ int[] age = new int[]{12,42,85};
 #### Listes
 - Théorie:
 ```sh
-List<type> nom = new List<type>(); //Déclaration /Instanciation
-nom.Add(valeur1); //Ajout à la liste
-nom.Add(valeur2); //Ajout à la liste
+List<type> nom = new List<type>(); //Déclaration +Instanciation
+nom.Add(valeur1); //Affectation
+nom.Add(valeur2);
 
 // ou
 
@@ -274,8 +276,23 @@ string n = "42";
 ```sh
 accessibilité type_de_retour nomDeLaFonction(typedeparamètre1 nomduParamètre1, typedeparamètre2)
 {
-
+    Instruction;
+    Instruction;
+    ...
 } 
+```
+
+```csharp
+public void Accueillir(string nom)
+{
+    Console.WriteLine($"Bienvenue à toi {nom}!");
+}
+
+public int InTenYears(int age)
+{
+    Console.WriteLine($"Dans dix ans vous aurez:{age+10}");
+    return age + 10;    
+}
 ```
 
 ## POO
