@@ -2,7 +2,7 @@
 - Auteur: DANSOKO Boubakar
 - Date: 4/03/2019
 - Source: MSDN 
-- Lien utile : https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/
+- Lien utile: https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/
 ### Création d'un projet
 
 - Pour un projet en ligne de commandes:
@@ -34,7 +34,7 @@ dotnet run
 ### Commentaires
 - `// Commentaire` : sur une ligne (avec le `//`)
 - `/* Commentaires */`: délimité par `/*` au debut puis on fini par `*/` C'est à l'intérieur de celui-ci que l'on écrit nos commentaires.
-- `///`: pour la documentation - dans visual studio celà vas créer un summary au dessus d'une fonction, classe etc...
+- `///`: pour la documentation - dans visual studio (pas dans vs code) celà vas créer un summary au dessus d'une fonction, classe etc...
 
 ### Variables
 https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/types-and-variables
@@ -68,18 +68,18 @@ happy = "Yahou";
 #### Théorie
 
 Simple:
-- `+`: addition
-- `-`: soustraction
-- `/`: divsion
-- `%`: retourne le reste de la division
+- `+` : addition
+- `-` : soustraction
+- `/` : divsion
+- `%` : retourne le reste de la division
 
 Raccourci / simplification:
-- `++`: Incrémente la variable de 1 (ajoute 1 / +1)
-- `--`: Décremente la variable de 1 (retire 1 / -1)
-- `+=`: ajoute à la variable de gauche la valeur de droite
-- `-=`: ajoute à la variable de gauche la valeur de droite
+- `++` : Incrémente la variable de 1 (ajoute 1 / +1)
+- `--` : Décremente la variable de 1 (retire 1 / -1)
+- `+=` : ajoute à la variable de gauche la valeur de droite
+- `-=` : ajoute à la variable de gauche la valeur de droite
 
-
+#### Exemples
 Exemple Opérations simple:
 ```csharp
 
@@ -163,7 +163,7 @@ while(mdp != inp);
 Console.WriteLine("Mot de passe correct.");
 
 ```
-Noter que l'on entre dans la boucle au moins une fois!
+Noter que l'on entre dans le bloc au moins une fois et on peut rester bloqué à l'infini à moins de prévoir une évenutelle sortie.
 
 #### While
 - Théorie:
@@ -220,7 +220,10 @@ int[] age = new int[]{12,42,85};
 ```
 #### Listes
 - Théorie:
-```
+```sh
+List<type> nom = new List<type>(); //Déclaration /Instanciation
+
+nom.Add(valeur); //Ajout à la liste
 
 ```
 - Exemple:
