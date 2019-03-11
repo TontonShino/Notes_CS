@@ -205,6 +205,7 @@ type[,] nom = new int[nombre de colonne,nombre d item par colonne]
 string[] prenom = new string[3];
 int[] age = new int[3];
 
+
 //Affectation des valeurs
 prenom[0] = "Jean";
 prenom[1] = "Franck";
@@ -217,8 +218,11 @@ age[2] = 85;
 // équivaut à
 string[] prenom = new string[]{"Jean","Franck","Bernard"}
 int[] age = new int[]{12,42,85};
-
+```csharp
 //A rajouter deux dimensions
+string[,] recettes = new string[5,2]{ {"France","Boeuf bourguignon"}, {"Italie","Spaghetti"},{"USA","Burger"},{"Quebec","Poutine"}};
+
+```
 
 ```
 #### Listes
@@ -264,12 +268,22 @@ Console.WriteLine(hello);
 ### Conversion
 - Théorie:
 ```
+variable = type.Parse(valeur à convertir);
 
-
+variable = Convert.ToTYPE(valeur à convertir)
 ```
 - Exemple:
 ```csharp
 string n = "42";
+
+int nC = int.Parse(n);
+Console.WriteLine($"42+1 = {nC+1}"); //42+1 = 43
+Console.WriteLine($" \"42\"+1 = {n+1} "); //42+1 = 421
+
+//ou
+
+
+int nC = Convert.ToInt32(n);
 
 ```
 ### Fonctions
