@@ -1,9 +1,18 @@
 # Notes Langage C#
+
+Ce document est en cours d'édition.
+
 - Auteur: DANSOKO Boubakar
 - Date: 4/03/2019
 - Source: MSDN 
 - Lien utile: https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/
-### Création d'un projet
+
+Pour effectuer vos tests vous pouvez le faire avec .NET et .NET Core
+Pour la simplicité je conseille d'utiliser `.NET Core`.
+## Pré-requis
+- Installer Vs Code (.NET Core) sinon Visual Studio Community(.NET/.NET Core)
+- Le SDK de .NET Core [Téléchargement ici la version 2.2](https://dotnet.microsoft.com/download)  
+### Création d'un projet .NET Core
 
 - Pour un projet en ligne de commandes:
 ```
@@ -223,9 +232,9 @@ int[] age = new int[]{12,42,85};
 string[,] recettes = new string[5,2]{ {"France","Boeuf bourguignon"}, {"Italie","Spaghetti"},{"USA","Burger"},{"Quebec","Poutine"}};
 
 ```
-
-```
 #### Listes
+
+
 - Théorie:
 ```sh
 List<type> nom = new List<type>(); //Déclaration +Instanciation
@@ -311,5 +320,7 @@ public int InTenYears(int age)
 ```
 
 ## POO
+
+[En cours...]
 
 
